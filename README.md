@@ -1,6 +1,6 @@
 # open-linux-file-dialog [![NPM version](https://img.shields.io/npm/v/open-linux-file-dialog.svg?style=flat)](https://www.npmjs.com/package/open-linux-file-dialog) [![NPM monthly downloads](https://img.shields.io/npm/dm/open-linux-file-dialog.svg?style=flat)](https://npmjs.org/package/open-linux-file-dialog) [![NPM total downloads](https://img.shields.io/npm/dt/open-linux-file-dialog.svg?style=flat)](https://npmjs.org/package/open-linux-file-dialog)
 
-> Open a file dialog window programmatically, to allow the user to select one or more files. Only works on Linux.
+> Open a file dialog window programmatically to allow the user to select one or more files. Only works on Linux. No dependencies. Supports zenity (GNOME), kdialog (KDE), yad (Yet Another Dialog), qarma (Qt-based), matedialog (MATE), rofi (window switcher with file browser mode), fzf (terminal fuzzy finder), dmenu (dynamic menu).
 
 Please consider following this project's author, [Jon Schlinkert](https://github.com/jonschlinkert), and consider starring the project to show your :heart: and support.
 

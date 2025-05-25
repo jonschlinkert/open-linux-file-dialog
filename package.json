@@ -1,6 +1,6 @@
 {
   "name": "open-linux-file-dialog",
-  "description": "Open a file dialog window programmatically, to allow the user to select one or more files. Only works on Linux.",
+  "description": "Open a file dialog window programmatically to allow the user to select one or more files. Only works on Linux. No dependencies. Supports zenity (GNOME), kdialog (KDE), yad (Yet Another Dialog), qarma (Qt-based), matedialog (MATE), rofi (window switcher with file browser mode), fzf (terminal fuzzy finder), dmenu (dynamic menu).",
   "version": "1.0.0",
   "license": "MIT",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
@@ -9,16 +9,23 @@
   "bugs": {
     "url": "https://github.com/jonschlinkert/open-linux-file-dialog/issues"
   },
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "files": [
-    "dist"
-  ],
   "scripts": {
     "clean": "rm -rf dist",
     "eslint": "npx eslint --ext .ts .",
     "test": "ts-mocha -r esbuild-register 'test/*.test.ts' --exit",
     "tsup": "npm run clean && npx tsup"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
   },
   "devDependencies": {
     "@types/node": "^22.7.4",
@@ -34,23 +41,49 @@
     "typescript": "^5.5.3"
   },
   "keywords": [
+    "desktop",
     "dialog",
+    "dmenu",
+    "electron",
     "explorer",
+    "file chooser",
+    "file dialog",
     "file manager",
+    "file picker",
+    "file selection dialog",
+    "file selection",
     "file system",
+    "file-browser",
+    "file-chooser",
+    "file-dialog",
+    "file-picker",
+    "file-selector",
+    "file-system",
     "files",
     "finder",
-    "open",
-    "prompt",
-    "terminal",
+    "fzf",
+    "gnome",
+    "gui",
+    "kde",
+    "kdialog",
     "linux",
+    "mate",
+    "matedialog",
+    "native-dialog",
+    "open-file",
+    "open",
+    "powershell",
+    "prompt",
+    "qarma",
+    "qt",
+    "rofi",
     "select",
-    "dialog",
-    "file dialog",
-    "file picker",
-    "file selection",
-    "file chooser",
-    "file selection dialog"
+    "terminal",
+    "windows-api",
+    "windows-forms",
+    "windows",
+    "yad",
+    "zenity"
   ],
   "verb": {
     "toc": false,
@@ -63,6 +96,12 @@
     ],
     "reflinks": [
       "verb"
+    ],
+    "related": [
+      "open-file-manager",
+      "open-file-manager-dialog",
+      "open-linux-file-dialog",
+      "open-windows-file-dialog"
     ],
     "lint": {
       "reflinks": true
