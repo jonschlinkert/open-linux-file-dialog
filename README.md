@@ -178,6 +178,13 @@ if (tools.length === 0) {
 * File type filters are supported by most GUI dialog tools but may not work with terminal-based tools (fzf, dmenu)
 * On macOS, the native file dialog is used via `osascript`
 
+## Related
+
+You might also be interested in:
+
+* [open-file-manager](https://www.npmjs.com/package/open-file-manager): Cross-platform utility to open a file or directory in the system's default file manager (Finder… [more](https://github.com/jonschlinkert/open-file-manager) | [homepage](https://github.com/jonschlinkert/open-file-manager "Cross-platform utility to open a file or directory in the system's default file manager (Finder, Explorer, Nautilus, etc.)")
+* [open-linux-file-dialog](https://www.npmjs.com/package/open-linux-file-dialog): Open a file dialog window programmatically to allow the user to select one or more… [more](https://github.com/jonschlinkert/open-linux-file-dialog) | [homepage](https://github.com/jonschlinkert/open-linux-file-dialog "Open a file dialog window programmatically to allow the user to select one or more files. Only works on Linux. No dependencies. Supports zenity (GNOME), kdialog (KDE), yad (Yet Another Dialog), qarma (Qt-based), matedialog (MATE), rofi (window switcher wi")
+
 ## About
 
 <details>
